@@ -1,0 +1,31 @@
+#cadastro{
+    margin: auto;
+    width: 550px;
+    height: 100px;
+}
+
+#tabela{
+    margin: auto;
+    width: 550px;
+    height: 150px; 
+}
+
+tabela, tr, td, th{
+    font-family: Arial, Helvetica, sans-serif;
+    padding: 10px;
+    text-align: left;
+    width: 200px;
+    border: none;
+}
+
+table{
+    border-collapse: collapse;
+    border: 0;
+    background-color: aliceblue;
+}
+
+th{
+    color: white;
+    background-color: rgba(0, 0, 0, 0.8);
+}
+
