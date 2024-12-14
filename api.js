@@ -1,4 +1,4 @@
-class apiConection{
+class ApiConection{
 
     url = "http://localhost:3333/alunos"
 
@@ -30,5 +30,5 @@ class apiConection{
 }
 
 
-export default apiConection()
+export default ApiConection()
 
