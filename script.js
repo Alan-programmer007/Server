@@ -1,39 +1,21 @@
-class apiConection{
+import Apiconetion from "./api.js"
 
-    url = "http://localhost:3333/alunos"
+const api = new Apiconetion()
 
-    async listarAluno(){
-    const response =  await fetch(this.url)
-    
-    const dados = await response.json()
-    console.log(dados)
-    
-    return dados
-    }
-    
-    async cadastraAluno(aluno) {
-    const response =  await fetch(this.url, {
-        method: "POST",
-        body: JSON.stringify(aluno),
-        headers: {"Content-Type": "application/json"}
-    });
-    
+const button = document.querySelector("#entrada")
+
+button.addEventListener('click', () => {
+
+    const inputNome = querySelector("#input-nome")
+    const inputEmail = querySelector("#input-email")
+
+    const nome = inputNome.value
+    const email = inputEmail.value
+
+    const aluno = {
+        nome,
+        email
     }
 
-
-    async deletarAluno(id) {
-    const response =  await fetch(this.url + "/" +id, {
-        method: "DELETE"
-    });
-        
-    }
-    
-}
-
-
-    const api = new apiConection()
-
-    api.listarAluno()
-    api.deletarAluno(3)
-//  api.cadastraAluno(aluno)
-
+    api.listarAluno(aluno)
+})
