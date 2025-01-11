@@ -1,6 +1,6 @@
-import Apiconetion from "./api.js"
+import ApiConetion from "./api.js"
 
-const api = new Apiconetion()
+const api = new ApiConetion()
 
 const button = document.querySelector("#entrada")
 

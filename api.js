@@ -31,4 +31,4 @@ class ApiConection{
 
 
 export default ApiConection()
-
+//export default ApiConection()
